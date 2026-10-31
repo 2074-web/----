@@ -116,12 +116,55 @@
             <p class="tour__eyebrow"><span></span> 巡演場次 <span>ON THE ROAD</span></p>
             <h2 id="tour-title">下一站，<br>與你現場相見。</h2>
             <p class="tour__intro">以下為版面示意場次，並非官方巡演公告。實際日期、場館與售票資訊請以官方公告為準。</p>
-            <p class="tour__countdown" id="倒數">距離下一場巡演：敬請留意官方公告</p>
           </header>
+
+          <section class="tour-countdown-section" aria-labelledby="countdown-section-title">
+            <h3 class="countdown__section-title" id="countdown-section-title">NEXT SHOW COUNTDOWN</h3>
+            <div class="countdown__tabs" role="tablist" aria-label="選擇演唱會場次">
+              <button class="countdown__tab" id="show-tab-0" type="button" role="tab" aria-selected="true" aria-controls="countdown-panel" tabindex="0">TOKYO D1</button>
+              <button class="countdown__tab" id="show-tab-1" type="button" role="tab" aria-selected="false" aria-controls="countdown-panel" tabindex="-1">TOKYO D2</button>
+              <button class="countdown__tab" id="show-tab-2" type="button" role="tab" aria-selected="false" aria-controls="countdown-panel" tabindex="-1">TAIPEI D1</button>
+              <button class="countdown__tab" id="show-tab-3" type="button" role="tab" aria-selected="false" aria-controls="countdown-panel" tabindex="-1">TAIPEI D2</button>
+            </div>
+            <div class="countdown__panel" id="countdown-panel" role="tabpanel" aria-labelledby="show-tab-0" tabindex="0">
+              <h4 class="countdown__title" id="countdown-title">NEXT SHOW: TOKYO DOME — DAY 1</h4>
+              <p class="countdown__location" id="countdown-location">東京，日本</p>
+              <p class="countdown__date"><time id="countdown-date" datetime="2027-03-20T19:30:00+09:00">2027年3月20日 19:30</time></p>
+              <div class="countdown__grid">
+                <div class="countdown__card">
+                  <span class="countdown__value" id="countdown-days">00</span>
+                  <span class="countdown__label"><span>天</span><span lang="en">DAYS</span></span>
+                </div>
+                <div class="countdown__card">
+                  <span class="countdown__value" id="countdown-hours">00</span>
+                  <span class="countdown__label"><span>時</span><span lang="en">HOURS</span></span>
+                </div>
+                <div class="countdown__card">
+                  <span class="countdown__value" id="countdown-mins">00</span>
+                  <span class="countdown__label"><span>分</span><span lang="en">MINS</span></span>
+                </div>
+                <div class="countdown__card">
+                  <span class="countdown__value" id="countdown-secs">00</span>
+                  <span class="countdown__label"><span>秒</span><span lang="en">SECS</span></span>
+                </div>
+              </div>
+              <p class="countdown__message" id="countdown-message" role="status" aria-live="polite" hidden>THIS SHOW HAS ENDED</p>
+            </div>
+          </section>
 
           <div class="tour__list" aria-label="巡演場次示意列表">
             <div class="card tour-card">
               <time class="tour-card__date" datetime="2027-03-20"><span>MAR</span>20<small>2027</small></time>
+              <div class="tour-card__venue">
+                <h3>東京巨蛋</h3>
+                <p>東京，日本</p>
+              </div>
+              <p class="tour-card__theme">ONE OK ROCK <span>WORLD TOUR 2027</span></p>
+              <a class="tour-card__button" href="https://www.oneokrock.com/en/tour/" target="_blank" rel="noopener noreferrer">立即搶票 <span>Buy Tickets</span><span class="tour-card__arrow" aria-hidden="true">↗</span></a>
+            </div>
+
+            <div class="card tour-card">
+              <time class="tour-card__date" datetime="2027-03-21"><span>MAR</span>21<small>2027</small></time>
               <div class="tour-card__venue">
                 <h3>東京巨蛋</h3>
                 <p>東京，日本</p>
@@ -141,20 +184,10 @@
             </div>
 
             <div class="card tour-card">
-              <time class="tour-card__date" datetime="2027-05-08"><span>MAY</span>08<small>2027</small></time>
+              <time class="tour-card__date" datetime="2027-04-11"><span>APR</span>11<small>2027</small></time>
               <div class="tour-card__venue">
-                <h3>Kia Forum</h3>
-                <p>洛杉磯，美國</p>
-              </div>
-              <p class="tour-card__theme">ONE OK ROCK <span>WORLD TOUR 2027</span></p>
-              <a class="tour-card__button" href="https://www.oneokrock.com/en/tour/" target="_blank" rel="noopener noreferrer">立即搶票 <span>Buy Tickets</span><span class="tour-card__arrow" aria-hidden="true">↗</span></a>
-            </div>
-
-            <div class="card tour-card">
-              <time class="tour-card__date" datetime="2027-06-12"><span>JUN</span>12<small>2027</small></time>
-              <div class="tour-card__venue">
-                <h3>The O2</h3>
-                <p>倫敦，英國</p>
+                <h3>臺北小巨蛋</h3>
+                <p>臺北，臺灣</p>
               </div>
               <p class="tour-card__theme">ONE OK ROCK <span>WORLD TOUR 2027</span></p>
               <a class="tour-card__button" href="https://www.oneokrock.com/en/tour/" target="_blank" rel="noopener noreferrer">立即搶票 <span>Buy Tickets</span><span class="tour-card__arrow" aria-hidden="true">↗</span></a>
